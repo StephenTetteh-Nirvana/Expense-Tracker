@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Balance from './components/Balance.js'
+import IncomeExpenses from './components/IncomeExpenses.js'
+import AddExpense from './components/AddExpense.js';
+
 
 function App() {
+  const transactions = [
+    {
+      id:3,
+      transaction:"Food",
+      amount:100
+    },
+    {
+      id:5,
+      transaction:"Vacation",
+      amount:500
+    },
+    {
+      id:8,
+      transaction:"Movie",
+      amount:50
+    },
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='transaction-container'>
+          <h1>Expense Tracker</h1>
+        <Balance/>
+        <IncomeExpenses/>
+        <AddExpense/>
+      </div>
+    
     </div>
   );
 }

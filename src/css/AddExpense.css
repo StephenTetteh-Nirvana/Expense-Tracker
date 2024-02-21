@@ -1,0 +1,34 @@
+.new-transaction-container{
+    margin-top:30px;
+}
+.new-transaction-container h3{
+    border-bottom:1px solid grey;
+}
+input[type="text"]{
+    padding:10px 5px;
+    border-radius:3px;
+    width:100%;
+    border:none;
+    border:1px solid grey;
+    margin-top:5px;
+    appearance: none;
+    outline:none;
+}
+
+.transaction-section,.amount-section{
+    margin-top:10px;
+}
+
+button{
+    display: flex;
+    margin:auto;
+    padding:7px 25px;
+    border:none;
+    background-color:#2666CF;
+    color:white;
+    font-size:17px;
+    margin-top:15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-family: "Poppins",sans-serif;
+}
