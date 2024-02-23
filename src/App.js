@@ -28,8 +28,8 @@ function App() {
     <div className="App">
       <div className='transaction-container'>
           <h1>Expense Tracker</h1>
-        <Balance/>
-        <IncomeExpenses/>
+        <Balance sources={sources}/>
+        <IncomeExpenses sources={sources}/>
         <h3 className='expense-history'>History</h3>
         {
           sources.length === 0 ? (
