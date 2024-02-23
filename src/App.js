@@ -6,13 +6,7 @@ import History from './components/History.js';
 import { useState } from 'react';
 
 function App() {
-  const [sources,setSources] = useState([
-    {
-      id:34,
-      source:"Food",
-      amount:40
-    }
-  ])
+  const [sources,setSources] = useState([])
 
   const addNewSource = (newData) => {
         const updatedSources = [...sources,newData]

@@ -6,12 +6,12 @@ const IncomeExpenses = ({sources}) => {
   const [income,setIncome] = useState(0)
   const [expense,setExpense] = useState(0)
 
-  const updateIncome = () => {
+  const updateIncomeExpenses = () => {
     const { income, expense } = sources.reduce((acc, source) => {
       if (source.amount > 0) {
         acc.income += Number(source.amount);
       } else {
-        acc.expense += Number(source.amount);
+        acc.expense += Math.abs(source.amount);
       }
       return acc;
     }, { income: 0, expense: 0 });
@@ -20,9 +20,10 @@ const IncomeExpenses = ({sources}) => {
     setExpense(expense);
   };
 
+
    useEffect(()=>{
-     updateIncome()
-   })
+    updateIncomeExpenses()   
+  })
 
   return (
     <div className='parent-container'>
