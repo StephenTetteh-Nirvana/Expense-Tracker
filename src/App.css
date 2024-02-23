@@ -14,10 +14,21 @@
   justify-content: center;
   align-items: center;
   background-color: #F5F7FA;
-  border:1px solid black;
+  padding-bottom:30px;
 }
 
 .App h1{
   font-size:25px;
+}
+
+.expense-history{
+  border-bottom:1px solid grey;
+  margin-top:10px;
+}
+.empty-history{
+  font-size:18px;
+  text-align:center;
+  margin-top:10px;
+  padding-bottom:15px;
 }
 
